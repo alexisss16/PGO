@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>Main.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #7a7e85;}
+.s4 { color: #2aacb8;}
+.s5 { color: #6aab73;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Main.java</font>
+</center></td></tr></table>
+<pre><span class="s0">public class </span><span class="s1">Main </span><span class="s2">{</span>
+    <span class="s0">public static void </span><span class="s1">main</span><span class="s2">(</span><span class="s1">String</span><span class="s2">[] </span><span class="s1">args</span><span class="s2">) {</span>
+<span class="s3">// Tworzymy instancję sklepu komputerowego</span>
+        <span class="s1">SklepKomputerowy sklep </span><span class="s2">= </span><span class="s0">new </span><span class="s1">SklepKomputerowy</span><span class="s2">();</span>
+<span class="s3">// Dodajemy produkty</span>
+        <span class="s1">Produkt produkt1 </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Produkt</span><span class="s2">();</span>
+        <span class="s1">produkt1</span><span class="s2">.</span><span class="s1">setId</span><span class="s2">(</span><span class="s4">1</span><span class="s2">);</span>
+        <span class="s1">produkt1</span><span class="s2">.</span><span class="s1">setNazwa</span><span class="s2">(</span><span class="s5">&quot;Laptop Dell XPS 13&quot;</span><span class="s2">);</span>
+        <span class="s1">produkt1</span><span class="s2">.</span><span class="s1">setKategoria</span><span class="s2">(</span><span class="s5">&quot;Laptop&quot;</span><span class="s2">);</span>
+        <span class="s1">produkt1</span><span class="s2">.</span><span class="s1">setCena</span><span class="s2">(</span><span class="s4">4999.99</span><span class="s2">);</span>
+        <span class="s1">produkt1</span><span class="s2">.</span><span class="s1">setIloscWMagazynie</span><span class="s2">(</span><span class="s4">10</span><span class="s2">);</span>
+        <span class="s1">produkt1</span><span class="s2">.</span><span class="s1">wyswietlInformacje</span><span class="s2">();</span>
+        <span class="s1">Produkt produkt2 </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Produkt</span><span class="s2">();</span>
+        <span class="s1">produkt2</span><span class="s2">.</span><span class="s1">setId</span><span class="s2">(</span><span class="s4">2</span><span class="s2">);</span>
+        <span class="s1">produkt2</span><span class="s2">.</span><span class="s1">setNazwa</span><span class="s2">(</span><span class="s5">&quot;Mysz Logitech MX Master 3&quot;</span><span class="s2">);</span>
+        <span class="s1">produkt2</span><span class="s2">.</span><span class="s1">setKategoria</span><span class="s2">(</span><span class="s5">&quot;Mysz&quot;</span><span class="s2">);</span>
+        <span class="s1">produkt2</span><span class="s2">.</span><span class="s1">setCena</span><span class="s2">(</span><span class="s4">349.99</span><span class="s2">);</span>
+        <span class="s1">produkt2</span><span class="s2">.</span><span class="s1">setIloscWMagazynie</span><span class="s2">(</span><span class="s4">30</span><span class="s2">);</span>
+        <span class="s1">Produkt produkt3 </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Produkt</span><span class="s2">();</span>
+        <span class="s1">produkt3</span><span class="s2">.</span><span class="s1">setId</span><span class="s2">(</span><span class="s4">3</span><span class="s2">);</span>
+        <span class="s1">produkt3</span><span class="s2">.</span><span class="s1">setNazwa</span><span class="s2">(</span><span class="s5">&quot;Monitor Samsung 27</span><span class="s0">\&quot;</span><span class="s5">&quot;</span><span class="s2">);</span>
+        <span class="s1">produkt3</span><span class="s2">.</span><span class="s1">setKategoria</span><span class="s2">(</span><span class="s5">&quot;Monitor&quot;</span><span class="s2">);</span>
+        <span class="s1">produkt3</span><span class="s2">.</span><span class="s1">setCena</span><span class="s2">(</span><span class="s4">1299.99</span><span class="s2">);</span>
+        <span class="s1">produkt3</span><span class="s2">.</span><span class="s1">setIloscWMagazynie</span><span class="s2">(</span><span class="s4">15</span><span class="s2">);</span>
+        <span class="s1">sklep</span><span class="s2">.</span><span class="s1">dodajProdukt</span><span class="s2">(</span><span class="s1">produkt1</span><span class="s2">);</span>
+        <span class="s1">sklep</span><span class="s2">.</span><span class="s1">dodajProdukt</span><span class="s2">(</span><span class="s1">produkt2</span><span class="s2">);</span>
+        <span class="s1">sklep</span><span class="s2">.</span><span class="s1">dodajProdukt</span><span class="s2">(</span><span class="s1">produkt3</span><span class="s2">);</span>
+<span class="s3">// Dodajemy klientów</span>
+        <span class="s1">Klient klient1 </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Klient</span><span class="s2">();</span>
+        <span class="s1">klient1</span><span class="s2">.</span><span class="s1">setId</span><span class="s2">(</span><span class="s4">1</span><span class="s2">);</span>
+        <span class="s1">klient1</span><span class="s2">.</span><span class="s1">setImie</span><span class="s2">(</span><span class="s5">&quot;Jan&quot;</span><span class="s2">);</span>
+        <span class="s1">klient1</span><span class="s2">.</span><span class="s1">setNazwisko</span><span class="s2">(</span><span class="s5">&quot;Kowalski&quot;</span><span class="s2">);</span>
+        <span class="s1">klient1</span><span class="s2">.</span><span class="s1">setEmail</span><span class="s2">(</span><span class="s5">&quot;jan.kowalski@example.com&quot;</span><span class="s2">);</span>
+        <span class="s1">klient1</span><span class="s2">.</span><span class="s1">setCzyStaly</span><span class="s2">(</span><span class="s0">true</span><span class="s2">);</span>
+        <span class="s1">Klient klient2 </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Klient</span><span class="s2">();</span>
+        <span class="s1">klient2</span><span class="s2">.</span><span class="s1">setId</span><span class="s2">(</span><span class="s4">2</span><span class="s2">);</span>
+        <span class="s1">klient2</span><span class="s2">.</span><span class="s1">setImie</span><span class="s2">(</span><span class="s5">&quot;Anna&quot;</span><span class="s2">);</span>
+        <span class="s1">klient2</span><span class="s2">.</span><span class="s1">setNazwisko</span><span class="s2">(</span><span class="s5">&quot;Nowak&quot;</span><span class="s2">);</span>
+        <span class="s1">klient2</span><span class="s2">.</span><span class="s1">setEmail</span><span class="s2">(</span><span class="s5">&quot;anna.nowak@example.com&quot;</span><span class="s2">);</span>
+        <span class="s1">klient2</span><span class="s2">.</span><span class="s1">setCzyStaly</span><span class="s2">(</span><span class="s0">false</span><span class="s2">);</span>
+        <span class="s1">sklep</span><span class="s2">.</span><span class="s1">dodajKlienta</span><span class="s2">(</span><span class="s1">klient1</span><span class="s2">);</span>
+        <span class="s1">sklep</span><span class="s2">.</span><span class="s1">dodajKlienta</span><span class="s2">(</span><span class="s1">klient2</span><span class="s2">);</span>
+<span class="s3">// Tworzymy zamówienia</span>
+        <span class="s1">Produkt</span><span class="s2">[] </span><span class="s1">produktyZamowienia1 </span><span class="s2">= {</span><span class="s1">produkt1</span><span class="s2">, </span><span class="s1">produkt2</span><span class="s2">};</span>
+        <span class="s0">int</span><span class="s2">[] </span><span class="s1">ilosciZamowienia1 </span><span class="s2">= {</span><span class="s4">1</span><span class="s2">, </span><span class="s4">1</span><span class="s2">};</span>
+        <span class="s1">Zamowienie zamowienie1 </span><span class="s2">= </span><span class="s1">sklep</span><span class="s2">.</span><span class="s1">utworzZamowienie</span><span class="s2">(</span><span class="s1">klient1</span><span class="s2">, </span><span class="s1">produktyZamowienia1</span><span class="s2">, </span><span class="s1">ilosciZamowienia1</span><span class="s2">);</span>
+        <span class="s1">zamowienie1</span><span class="s2">.</span><span class="s1">zastosujZnizke</span><span class="s2">(); </span><span class="s3">// Zastosuj zniżkę dla stałego klienta</span>
+        <span class="s1">sklep</span><span class="s2">.</span><span class="s1">aktualizujStanMagazynowy</span><span class="s2">(</span><span class="s1">zamowienie1</span><span class="s2">);</span>
+<span class="s3">// Wyświetlamy informacje</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s5">&quot;Informacje o zamówieniu:&quot;</span><span class="s2">);</span>
+        <span class="s1">zamowienie1</span><span class="s2">.</span><span class="s1">wyswietlSzczegoly</span><span class="s2">();</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s5">&quot;</span><span class="s0">\n</span><span class="s5">Stan magazynowy po zamówieniu:&quot;</span><span class="s2">);</span>
+        <span class="s1">sklep</span><span class="s2">.</span><span class="s1">wyswietlProduktyWKategorii</span><span class="s2">(</span><span class="s5">&quot;Laptop&quot;</span><span class="s2">);</span>
+        <span class="s1">sklep</span><span class="s2">.</span><span class="s1">wyswietlProduktyWKategorii</span><span class="s2">(</span><span class="s5">&quot;Mysz&quot;</span><span class="s2">);</span>
+<span class="s3">// Zmiana statusu zamówienia</span>
+        <span class="s1">sklep</span><span class="s2">.</span><span class="s1">zmienStatusZamowienia</span><span class="s2">(</span><span class="s1">zamowienie1</span><span class="s2">.</span><span class="s1">getId</span><span class="s2">(), </span><span class="s5">&quot;Zrealizowane&quot;</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s5">&quot;</span><span class="s0">\n</span><span class="s5">Status zamówienia po aktualizacji:&quot;</span><span class="s2">);</span>
+        <span class="s1">zamowienie1</span><span class="s2">.</span><span class="s1">wyswietlSzczegoly</span><span class="s2">();</span>
+<span class="s3">// Dodanie kolejnego zamówienia</span>
+        <span class="s1">Produkt</span><span class="s2">[] </span><span class="s1">produktyZamowienia2 </span><span class="s2">= {</span><span class="s1">produkt3</span><span class="s2">, </span><span class="s1">produkt2</span><span class="s2">};</span>
+        <span class="s0">int</span><span class="s2">[] </span><span class="s1">ilosciZamowienia2 </span><span class="s2">= {</span><span class="s4">2</span><span class="s2">, </span><span class="s4">1</span><span class="s2">};</span>
+        <span class="s1">Zamowienie zamowienie2 </span><span class="s2">= </span><span class="s1">sklep</span><span class="s2">.</span><span class="s1">utworzZamowienie</span><span class="s2">(</span><span class="s1">klient2</span><span class="s2">, </span><span class="s1">produktyZamowienia2</span><span class="s2">, </span><span class="s1">ilosciZamowienia2</span><span class="s2">);</span>
+        <span class="s1">sklep</span><span class="s2">.</span><span class="s1">aktualizujStanMagazynowy</span><span class="s2">(</span><span class="s1">zamowienie2</span><span class="s2">);</span>
+<span class="s3">// Wyświetlanie zamówień klienta</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s5">&quot;</span><span class="s0">\n</span><span class="s5">Zamówienia klienta Jan Kowalski:&quot;</span><span class="s2">);</span>
+        <span class="s1">sklep</span><span class="s2">.</span><span class="s1">wyswietlZamowieniaKlienta</span><span class="s2">(</span><span class="s4">1</span><span class="s2">);</span>
+    <span class="s2">}</span>
+<span class="s2">}</span></pre>
+</body>
+</html>
