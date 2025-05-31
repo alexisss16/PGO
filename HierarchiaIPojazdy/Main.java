@@ -1,8 +1,15 @@
 public class Main {
     public static void main(String[] args) {
-        Car car = new Car(5);
-        car.start();
-        car.stop();
-        System.out.println("Liczba miejsc: " + car.getNumberOfSeats());
+        Animal dog = new Dog("Reksio");
+        dog.makeNoise();
+        dog.roam();
+
+        Animal cat = new Cat("Mruczek");
+        cat.makeNoise();
+        cat.roam();
+
+        Animal lion = new Lion("Simba");
+        lion.makeNoise();
+        lion.roam();
     }
 }
